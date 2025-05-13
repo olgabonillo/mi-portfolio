@@ -1,4 +1,6 @@
 @import './variables';
+@import './Header.scss';
+@import './mixins';
 
 body {
   background-color: $color-bg;
@@ -8,11 +10,16 @@ body {
   padding: 0;
 }
 
-section {
-  padding: 2rem;
-}
-
 .logo {
   width: 150px;
   height: auto;
 }
+
+section {
+  padding: 2rem;
+}
+
+.nav {
+  background-color: cadetblue;
+}
+

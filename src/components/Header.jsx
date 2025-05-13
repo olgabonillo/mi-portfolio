@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <img src={logo} alt="Logo Olga Bonillo" className="logo" />
       <h1>portfolio Olga Bonillo</h1>
-      <nav className="navegacion">
+      <nav className="nav">
         <ul>
           <li>
             <a href="#quien-soy">Quién soy</a>
