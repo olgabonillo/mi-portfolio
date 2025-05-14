@@ -1,28 +1,27 @@
 import "../styles/Header.scss";
-import logo from "../assets/logo.png";
 
 const Header = () => {
+  console.log("El componente Header se ha montado");
+
   return (
     <header className="header">
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={logo} className="logo" alt="React logo" />
-        </a>
-      </div>
-      <h1>portfolio Olga Bonillo</h1>
+      <img src="/logo.png" className="logo" alt="Logo" />
       <nav className="nav">
-        <ul>
+        <ul className="ul-list">
           <li>
-            <a href="#quien-soy">Quién soy</a>
+            <a href="#1" className="links">Sobre mí</a>
           </li>
+          <li>|</li>
           <li>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#2" className="links">Proyectos</a>
           </li>
+          <li>|</li>
           <li>
-            <a href="#curso-aws">Curso AWS re/Start</a>
+            <a href="#3" className="links">Curso AWS re/Start</a>
           </li>
+          <li>|</li>
           <li>
-            <a href="#contacto">Contacto</a>
+            <a href="#4"className="links" >Contacto</a>
           </li>
         </ul>
       </nav>

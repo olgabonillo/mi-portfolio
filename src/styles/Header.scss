@@ -4,12 +4,22 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: aqua;
+  background-color: #fbc0b3;
 
   h1 {
     font-size: 1.8rem;
     color: $color-text;
   }
+}
+
+.ul-list {
+  list-style-type: none;
+  display: flex;
+  font-size: 30px;
+}
+
+.links {
+  color: black;
 }
 
 .logo {

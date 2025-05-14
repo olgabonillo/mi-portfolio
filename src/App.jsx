@@ -9,13 +9,11 @@ function App() {
 
   return (
     <>
-      <div>
       <Header />
       <About />
       <Projects />
       <AWS />
       <Footer />
-    </div> 
     </>
   )
 }

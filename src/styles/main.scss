@@ -1,20 +1,19 @@
-@import './variables';
-@import './mixins';
-@import './Header.scss';
+@use './variables';
 
 body {
-  background-color: $color-bg;
-  color: $color-text;
-  font-family: $font-main;
+  background-color: variables.$color-bg;
+  color: variables.$color-text;
+  font-family: variables.$font-main;
   margin: 0;
   padding: 0;
 }
 
 section {
-  padding: 2rem;
+  margin: 20px;
 }
 
 .nav {
-  background-color: cadetblue;
+  background-color: #fbc0b3;
+  text-align: left;
 }
 
