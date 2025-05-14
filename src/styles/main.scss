@@ -1,6 +1,6 @@
 @import './variables';
-@import './Header.scss';
 @import './mixins';
+@import './Header.scss';
 
 body {
   background-color: $color-bg;
@@ -8,11 +8,6 @@ body {
   font-family: $font-main;
   margin: 0;
   padding: 0;
-}
-
-.logo {
-  width: 150px;
-  height: auto;
 }
 
 section {

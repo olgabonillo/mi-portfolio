@@ -1,5 +1,8 @@
-import reactLogo from './assets/logo.png'
-import './App.css'
+import Header from './components/Header'
+import About from './components/About'
+import AWS from './components/AWS'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -7,12 +10,12 @@ function App() {
   return (
     <>
       <div>
-
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      
+      <Header />
+      <About />
+      <Projects />
+      <AWS />
+      <Footer />
+    </div> 
     </>
   )
 }

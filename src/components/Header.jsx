@@ -1,10 +1,14 @@
-import "./Header.scss";
+import "../styles/Header.scss";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <header className="header">
-      <img src={logo} alt="Logo Olga Bonillo" className="logo" />
+      <div>
+        <a href="https://react.dev" target="_blank">
+          <img src={logo} className="logo" alt="React logo" />
+        </a>
+      </div>
       <h1>portfolio Olga Bonillo</h1>
       <nav className="nav">
         <ul>

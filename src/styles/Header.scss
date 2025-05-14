@@ -4,9 +4,15 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: aqua;
 
   h1 {
     font-size: 1.8rem;
     color: $color-text;
   }
+}
+
+.logo {
+  width: 150px;
+  height: auto;
 }
