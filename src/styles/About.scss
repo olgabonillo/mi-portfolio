@@ -1,11 +1,17 @@
 @import '../styles/variables';
 
 .title-sections {
-    font-family: "Delius", cursive;
-    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Merriweather", serif;
 }
 
 .text-sections {
     font-family: "Delius", cursive;
     font-size: 20px; 
+    padding-left: 30px;
+    padding-right: 30px;
 }
