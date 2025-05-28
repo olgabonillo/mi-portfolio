@@ -22,18 +22,10 @@ const About = () => {
         entonces y me lancé de lleno a formarme como Desarrolladora Web. No fue
         una decisión fácil, pero sí una de las más valientes y gratificantes que
         he tomado. Desde entonces, he estado inmersa en un viaje de aprendizaje
-        constante. He aprendido a manejar tecnologías como HTML5, CSS3, SCSS,
-        JavaScript, Bootstrap, React y Node.js, entendiendo cómo se conectan
-        entre sí para dar vida a páginas y aplicaciones dinámicas, accesibles y
-        visualmente atractivas. He aprendido a estructurar el contenido, a
-        diseñar con intención, a dar interactividad con código y a pensar en
-        cómo mejorar la experiencia de quien está al otro lado de la pantalla.
+        constante.
         Una de las cosas que más me motiva del desarrollo web es que es un campo
-        donde nunca dejas de aprender. Cada nuevo proyecto es un reto diferente,
-        y cada reto es una oportunidad para crecer. Me encanta poder combinar la
-        parte lógica del código con la parte creativa del diseño, creando
-        interfaces que no solo funcionen bien, sino que también conecten con las
-        personas. Después de formarme en desarrollo web, quise ir un paso más
+        donde nunca dejas de aprender. 
+        Después de formarme en desarrollo web, quise ir un paso más
         allá y amplié mis conocimientos en tecnologías cloud con AWS, lo cual me
         ha dado una visión mucho más amplia del desarrollo moderno. Pero esa
         parte te la cuento en otra sección...
@@ -43,8 +35,8 @@ const About = () => {
         dejando un pedacito de mí en cada sección. Aquí podrás encontrar mis
         proyectos, mis habilidades y, sobre todo, mi evolución. Estoy muy
         ilusionada con lo que viene y preparada para seguir aprendiendo,
-        creciendo y aportando valor a través de la tecnología. ¡Gracias por
-        leerme y por acompañarme en esta aventura!
+        creciendo y aportando valor a través de la tecnología.
+        <br/>¡Gracias por leerme y por acompañarme en esta aventura!
           </p>
         </div>
       </div>
