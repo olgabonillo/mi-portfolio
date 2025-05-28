@@ -1,13 +1,18 @@
 import "../styles/About.scss";
-
+import foto from "../assets/foto.jpeg"; // Esta foto es provisional, la quiero cambiar por otra más profesional
 const About = () => {
   console.log("El componente About se ha creado");
 
   return (
-    <section id="quien-soy">
+    <section id="1" className="about-section">
       <h1 className="title-sections">Sobre mí</h1>
-      <p className="text-sections">
-        Durante mucho tiempo sentí que me faltaba algo, una chispa, un motor que
+      <div className="about-container">
+        <div className="about-image">
+          <img src={foto} alt="Foto de Olga Bonillo" />
+        </div>
+        <div className="text-sections">
+          <p>
+          Durante mucho tiempo sentí que me faltaba algo, una chispa, un motor que
         me impulsara de verdad. Fue entonces cuando, casi por casualidad,
         descubrí el mundo del desarrollo web… y todo cambió. La tecnología me
         atrapó desde el primer momento: su lógica, su creatividad, su capacidad
@@ -40,7 +45,9 @@ const About = () => {
         ilusionada con lo que viene y preparada para seguir aprendiendo,
         creciendo y aportando valor a través de la tecnología. ¡Gracias por
         leerme y por acompañarme en esta aventura!
-      </p>
+          </p>
+        </div>
+      </div>
     </section>
   );
 };

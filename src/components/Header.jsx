@@ -11,15 +11,15 @@ const Header = () => {
           <li>
             <a href="#1" className="links">Sobre mí</a>
           </li>
-          <li>|</li>
+          <li className="separated">|</li>
           <li>
             <a href="#2" className="links">Proyectos</a>
           </li>
-          <li>|</li>
+          <li className="separated">|</li>
           <li>
             <a href="#3" className="links">Curso AWS re/Start</a>
           </li>
-          <li>|</li>
+          <li className="separated">|</li>
           <li>
             <a href="#4"className="links" >Contacto</a>
           </li>

@@ -1,6 +1,7 @@
 const Header = () => {
     return (
       <header>
+        <section id="3">
         <h1 className="title-sections">Sobre AWS re/Start</h1>
         <p className='text-sections'>Recientemente, completé con éxito un bootcamp intensivo de AWS re/Start, una experiencia que marcó un antes y un después en mi carrera profesional.
 
@@ -27,6 +28,7 @@ Gracias a este bootcamp, adquirí una sólida base en redes, sistemas operativos
 
 Estoy muy ilusionada con todo lo que viene, y con muchas ganas de seguir creciendo en este camino. Esta página que estás viendo forma parte de ese proyecto: mi manera de mostrar lo que sé hacer, lo que he aprendido y lo que estoy construyendo.
 </p>
+</section>
       </header>
     );
   };

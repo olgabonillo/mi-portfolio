@@ -3,6 +3,7 @@ import '../styles/Projects.scss'
 const Header = () => {
   return (
     <header>
+      <section id='2'>
       <h1 className="title-sections">Proyectos</h1>
       <div className="container">
         <p className="text-sections">
@@ -84,6 +85,7 @@ const Header = () => {
           https://olgabonillo.github.io/proyecto-personal-olga-bonillo/
         </a>
       </div>
+      </section>
     </header>
   );
 };
