@@ -2,8 +2,8 @@ const Header = () => {
     return (
       <header>
         <section id="3">
-        <h1 className="title-sections">Sobre AWS re/Start</h1>
-        <p className='text-sections'>Recientemente, completé con éxito un bootcamp intensivo de AWS re/Start, una experiencia que marcó un antes y un después en mi carrera profesional.
+        <h1 className="title-sections-2">Sobre AWS re/Start</h1>
+        <p className='text-sections-2'>Recientemente, completé con éxito un bootcamp intensivo de AWS re/Start, una experiencia que marcó un antes y un después en mi carrera profesional.
 
 Este programa está diseñado para personas que buscan iniciarse en el mundo de la computación en la nube, y me brindó una formación muy completa en los fundamentos de Amazon Web Services (AWS), la plataforma de servicios en la nube más utilizada del mundo. Durante varios meses, me sumergí en un entorno de aprendizaje práctico donde no solo adquirí conocimientos técnicos, sino también habilidades esenciales para el trabajo en equipo, la resolución de problemas y la comunicación efectiva.
 
