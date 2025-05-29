@@ -20,7 +20,7 @@
   list-style-type: none;
   display: flex;
   font-size: 30px;
-  gap: 1.5rem; // separación entre enlaces
+  gap: 1.5rem;
 }
 
 nav {
@@ -46,4 +46,48 @@ nav {
 .logo {
   width: 150px;
   height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .ul-list {
+    flex-direction: column;
+    width: 100%;
+    display: none; // oculto por defecto
+    background-color: black;
+    padding: 1rem 0;
+    margin: 0;
+
+    li {
+      text-align: left;
+      padding: 0.5rem 2rem;
+
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .ul-list.show {
+    display: flex; // se muestra cuando se activa el botón
+  }
 }

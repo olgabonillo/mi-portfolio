@@ -18,14 +18,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 10rem;
     flex-wrap: wrap; // para que sea responsive automáticamente
 }
 
 .about-image img {
     width: 350px;
     height: auto;
-    display: flex;
+    display: block;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -36,7 +37,7 @@
     font-family: "Delius", cursive;
     font-size: 15px;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 680px;
     text-align: justify;
     padding: 0 1rem;
 }
@@ -65,6 +66,28 @@
     .about-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .text-sections {
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .title-sections-2 {
+        font-size: 2rem;
+    }
+
+    .text-sections-2 {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; // antes heredaba 10rem del desktop, esto lo reduce
     }
 
     .text-sections {

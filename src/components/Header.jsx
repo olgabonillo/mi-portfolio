@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <img src="/logo.png" className="logo" alt="Logo" />
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
       <nav className="nav">
         <ul className="ul-list">
           <li>
