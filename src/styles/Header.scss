@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 4px;
   background-color: black;
   position: sticky;
   top: 0;
@@ -19,9 +19,11 @@
 .ul-list {
   list-style-type: none;
   display: flex;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 20px;
   gap: 1.5rem;
 }
+
 
 nav {
   display: flex;
@@ -44,7 +46,7 @@ nav {
 }
 
 .logo {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 

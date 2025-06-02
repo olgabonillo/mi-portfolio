@@ -8,3 +8,24 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+
+main {
+  padding-top: 48px; // espacio para el header sticky
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: calc(var(--vh, 1vh) * 100 - 48px);
+  scroll-snap-align: start;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,106 +1,86 @@
 @import '../styles/variables';
 
 .title-sections {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Merriweather", serif;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 2rem;
+  margin-top: 1rem; // ← añadido para evitar solapamiento con header
 }
 
 .about-section {
-    padding: 4rem 2rem;
+  padding: 2rem 2rem; // ← reducido el padding-top
 }
 
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10rem;
-    flex-wrap: wrap; // para que sea responsive automáticamente
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10rem;
+  flex-wrap: wrap;
 }
 
 .about-image img {
-    width: 350px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .text-sections {
-    font-family: "Delius", cursive;
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 680px;
-    text-align: justify;
-    padding: 0 1rem;
+  font-family: "Delius", cursive;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 680px;
+  text-align: justify;
+  padding: 0 1rem;
 }
 
 .title-sections-2 {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Merriweather", serif;
-    margin-bottom: 1.5rem;
-    color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 1.5rem;
+  color: black;
 }
 
 .text-sections-2 {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: "Delius", cursive;
-    font-size: 18px;
-    line-height: 1.7;
-    text-align: center;
-    padding: 0 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Delius", cursive;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  padding: 0 1.5rem;
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    .text-sections {
-        text-align: left;
-        padding: 0 1rem;
-    }
+  .text-sections {
+    text-align: left;
+    padding: 0 1rem;
+  }
 
-    .title-sections-2 {
-        font-size: 2rem;
-    }
+  .title-sections-2 {
+    font-size: 2rem;
+  }
 
-    .text-sections-2 {
-        font-size: 16px;
-        padding: 0 1rem;
-    }
+  .text-sections-2 {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem; // antes heredaba 10rem del desktop, esto lo reduce
-    }
-
-    .text-sections {
-        text-align: left;
-        padding: 0 1rem;
-    }
-
-    .title-sections-2 {
-        font-size: 2rem;
-    }
-
-    .text-sections-2 {
-        font-size: 16px;
-        padding: 0 1rem;
-    }
-}

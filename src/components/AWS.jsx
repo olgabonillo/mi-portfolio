@@ -1,3 +1,5 @@
+import "../styles/Aws.scss";
+
 const Header = () => {
     return (
       <header>
