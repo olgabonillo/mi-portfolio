@@ -28,4 +28,29 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
+  scroll-margin-top: 100px; // altura del header + margen de seguridad - voy a probar a ver cómo queda
+}
+
+section[id] {
+  scroll-snap-align: start;
+  scroll-margin-top: 100px;
+}
+
+
+section.footer-section {
+  height: auto !important;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding-top: 56px;
+  }
 }

@@ -2,25 +2,36 @@
 
 .footer {
     text-align: center;
-    padding-bottom: 30px;
+    padding: 20px 0px;
+    background-color: transparent; // Asegúrate de que no esté "empujando" nada visualmente
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
+
+.footer-section {
+    padding: 0;
+    margin: 0;
+}
+
 
 .footer-separator {
     border-top: 2px solid black;
-    margin-top: 50px;
-    width: 100%;
+    margin: 0 auto 20px auto;
+    width: 100%; // ← este es el cambio clave
+    max-width: 100%;
 }
 
+
 .social-icons {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
+    margin: 0 auto 10px auto;
 
     a {
         color: black;
-        font-size: 2rem;
-        transition: transform 0.2s;
+        font-size: 1.5rem;
 
         &:hover {
             transform: scale(1.2);
@@ -29,34 +40,31 @@
 }
 
 .logo-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .logo-blanco {
-    width: 100px;
+    width: 70px;
     height: auto;
 }
 
-/* MEDIA QUERIES para responsive */
 @media (max-width: 768px) {
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer-separator {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
     .social-icons {
-        flex-direction: row;
-        align-items: center;
         gap: 12px;
     }
 
-    .title-sections {
-        font-size: 30px;
-    }
-
     .logo-blanco {
-        width: 80px;
-        margin-top: 10px;
-    }
-
-    .footer {
-        padding: 20px 10px;
+        width: 60px;
     }
 }

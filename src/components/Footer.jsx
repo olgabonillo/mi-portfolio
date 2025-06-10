@@ -4,10 +4,11 @@ import "../styles/Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-separator"></div>
-
-      <section id="4">
-        <h1 className="title-sections">¿Tienes un proyecto o idea? ¡Contáctame!</h1>
+      <section id="4" className="footer-section">
+        <div className="footer-separator"></div>
+        <h1 className="title-sections">
+          ¿Tienes un proyecto o idea? ¡Contáctame!
+        </h1>
         <div className="social-icons">
           <a
             href="https://www.instagram.com/olgabonillo"

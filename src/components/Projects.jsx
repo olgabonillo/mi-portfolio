@@ -14,7 +14,7 @@ const Header = () => {
         <a
           href="https://beta.adalab.es/modulo-1-evaluacion-final-olgabonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://beta.adalab.es/modulo-1-evaluacion-final-olgabonillo/
         </a>
@@ -27,7 +27,7 @@ const Header = () => {
         <a
           href="https://beta.adalab.es/modulo-1-evaluacion-final-olgabonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://olgabonillo.github.io/modulo-2-evaluacion-intermedia-olgabonillo/
         </a>
@@ -40,7 +40,7 @@ const Header = () => {
         <a
           href="https://beta.adalab.es/modulo-2-evaluacion-final-olgabonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://beta.adalab.es/modulo-2-evaluacion-final-olgabonillo/
         </a>
@@ -53,7 +53,7 @@ const Header = () => {
         <a
           href="https://beta.adalab.es/modulo-2-evaluacion-final-bis-olgabonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://beta.adalab.es/modulo-2-evaluacion-final-bis-olgabonillo/
         </a>
@@ -66,7 +66,7 @@ const Header = () => {
         <a
           href="https://beta.adalab.es/modulo-3-evaluacion-final-olgabonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://beta.adalab.es/modulo-3-evaluacion-final-olgabonillo/
         </a>
@@ -80,7 +80,7 @@ const Header = () => {
         <a
           href="https://olgabonillo.github.io/proyecto-personal-olga-bonillo/"
           target="_blank"
-          rel="noopener noreferrer" className="a"
+          rel="noopener noreferrer" className="project-link"
         >
           https://olgabonillo.github.io/proyecto-personal-olga-bonillo/
         </a>
