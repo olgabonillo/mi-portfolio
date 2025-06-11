@@ -1,5 +1,7 @@
 import "../styles/About.scss";
 import foto from "../assets/foto.jpeg"; // Esta foto es provisional, la quiero cambiar por otra más profesional
+import logos from "../assets/tech-logos.jpeg"; // imagen con los logos de las tecnologías que manejo
+
 const About = () => {
   console.log("El componente About se ha creado");
 
@@ -39,6 +41,9 @@ const About = () => {
         <br/>¡Gracias por leerme y por acompañarme en esta aventura!
           </p>
         </div>
+        <div className="tech-logos">
+        <img src={logos} alt="Logos de tecnologías" />
+      </div>
       </div>
     </section>
   );

@@ -1,5 +1,11 @@
 @use './variables';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: variables.$color-bg;
   color: variables.$color-text;
@@ -8,9 +14,11 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-
 main {
-  padding-top: 48px; // espacio para el header sticky
+  padding-top: 48px; // altura del header
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 html, body {
@@ -21,7 +29,8 @@ html, body {
 }
 
 section {
-  height: calc(var(--vh, 1vh) * 100 - 48px);
+  min-height: calc(var(--vh, 1vh) * 100 - 48px); // altura mínima, no obligatoria
+  height: auto;
   scroll-snap-align: start;
   font-size: 3rem;
   display: flex;
@@ -42,6 +51,12 @@ section.footer-section {
   height: auto !important;
   padding: 2rem 1rem;
 }
+
+img {
+  border: none;
+  box-shadow: none;
+}
+
 
 @media (max-width: 768px) {
   section {
