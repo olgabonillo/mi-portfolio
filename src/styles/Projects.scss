@@ -9,9 +9,9 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-  }
-  
-  .project-link {
+}
+
+.project-link {
     color: brown;
     text-decoration: underline;
     display: block;
@@ -19,19 +19,114 @@
     margin-bottom: 15px;
     font-size: 20px;
     word-break: break-word;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-image {
+    flex-shrink: 0;
+
+    img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-link {
+    color: brown;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 1rem;
+    word-break: break-word;
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-image {
+    flex-shrink: 0;
+
+    img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-link {
+    color: brown;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 1rem;
+    word-break: break-word;
+}
+
+
+@media (max-width: 768px) {
     .container {
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-  
+
     .project-link {
-      font-size: 16px;
-      margin-bottom: 15px;
+        font-size: 16px;
+        margin-bottom: 15px;
     }
-  }
-  
+}
+
+@media (max-width: 767px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image {
+        display: none; // 🔥 Ocultar imágenes en móvil
+    }
+
+    .project-info {
+        align-items: center;
+    }
+
+    .project-link {
+        font-size: 16px;
+    }
+}
+
+// Opcional: para tablets (>=768px) y escritorio
+@media (min-width: 768px) {
+    .project-image {
+        display: block;
+    }
+}
