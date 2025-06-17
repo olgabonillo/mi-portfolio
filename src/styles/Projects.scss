@@ -64,13 +64,30 @@
 }
 
 .project-image {
-    flex-shrink: 0;
+    width: 320px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
     img {
-        width: 300px;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
         height: auto;
-        border-radius: 10px;
+        object-fit: contain; // 👈 asegura que no se recorte
+        border-radius: 0; // 👈 esquinas rectas
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+        margin-top: 1rem;
+        font-size: 18px;
+        text-align: center;
+        color: brown;
+        text-decoration: underline;
+        word-break: break-word;
     }
 }
 
@@ -80,6 +97,12 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.text-sections-2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 
 .project-link {
     color: brown;
@@ -112,17 +135,18 @@
     }
 
     .project-image {
-        display: none; // 🔥 Ocultar imágenes en móvil
+        display: none;
     }
 
     .project-info {
         align-items: center;
     }
-
-    .project-link {
-        font-size: 16px;
-    }
 }
+
+.project-link {
+    font-size: 16px;
+}
+
 
 // Opcional: para tablets (>=768px) y escritorio
 @media (min-width: 768px) {
