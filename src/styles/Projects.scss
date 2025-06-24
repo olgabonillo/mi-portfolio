@@ -1,93 +1,57 @@
 @import '../styles/variables';
 
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+// Variables para mejor mantenimiento 
+$color-texto: #333;
+$color-enlace: brown;
+$color-divisor: #ddd;
+$espaciado-entre-proyectos: 40px;
+
+
+.title-sections-2 {
+    text-align: center;
+    margin-bottom: $espaciado-entre-proyectos;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado-entre-proyectos;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-}
+    padding-bottom: $espaciado-entre-proyectos / 2;
+    border-bottom: 1px solid $color-divisor;
 
-.project-link {
-    color: brown;
-    text-decoration: underline;
-    display: block;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 20px;
-    word-break: break-word;
-}
-
-.project-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #ddd;
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
 }
 
 .project-image {
     flex-shrink: 0;
-
-    img {
-        width: 300px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-}
-
-.project-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-link {
-    color: brown;
-    text-decoration: underline;
-    font-size: 18px;
-    margin-top: 1rem;
-    word-break: break-word;
-}
-
-.project-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #ddd;
-}
-
-.project-image {
-    width: 320px;
-    height: 200px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
+        width: 100%;
         height: auto;
-        object-fit: contain; // 👈 asegura que no se recorte
-        border-radius: 0; // 👈 esquinas rectas
+        display: block;
+        object-fit: contain;
+        border-radius: 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    a {
-        margin-top: 1rem;
-        font-size: 18px;
-        text-align: center;
-        color: brown;
-        text-decoration: underline;
-        word-break: break-word;
     }
 }
 
@@ -95,62 +59,83 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .text-sections-2 {
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 15px;
+    color: $color-texto;
 }
-
 
 .project-link {
-    color: brown;
-    text-decoration: underline;
+    color: $color-enlace;
+    text-decoration: none;
     font-size: 18px;
-    margin-top: 1rem;
     word-break: break-word;
-}
+    margin-top: 0;
+    display: inline-block;
+    padding-bottom: 2px;
+    position: relative;
 
-
-@media (max-width: 768px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .project-link {
-        font-size: 16px;
-        margin-bottom: 15px;
+    &:hover {
+        text-decoration: underline;
     }
 }
 
+// Media Queries para responsividad
+
+// Mobile (por defecto, ya configurado con flex-direction: column)
 @media (max-width: 767px) {
     .project-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+}
+
+// Tablets y Escritorio (Aplicamos la alternancia aquí)
+@media (min-width: 768px) {
+    .projects-list {
+        padding: 0 40px;
+    }
+
+    .project-card {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2rem;
+        padding-bottom: $espaciado-entre-proyectos / 2;
+
+        // PARA PROYECTOS PARES: imagen a la derecha, texto a la izquierda
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
 
     .project-image {
-        display: none;
+        width: 300px;
+        height: auto;
     }
 
     .project-info {
-        align-items: center;
+        align-items: flex-start;
     }
-}
 
-.project-link {
-    font-size: 16px;
-}
+    // Ajuste de márgenes para el espacio entre imagen y texto cuando alternan
+    .project-card:nth-child(odd) {
+        .project-image {
+            margin-right: 2rem;
+            margin-left: 0;
+        }
+    }
 
-
-// Opcional: para tablets (>=768px) y escritorio
-@media (min-width: 768px) {
-    .project-image {
-        display: block;
+    .project-card:nth-child(even) {
+        .project-image {
+            margin-left: 2rem;
+            margin-right: 0;
+        }
     }
 }
