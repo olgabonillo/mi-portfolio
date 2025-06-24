@@ -29,13 +29,13 @@ const Project = () => {
               <p className="text-sections-2">
                 Este trabajo fue mi primer paso en el desarrollo web. Se trata
                 de un proyecto de una simulación de una página web de productos
-                escolares. 
-                <br/>Proyecto desarrollado con{" "}
-                <strong>HTML y SCSS</strong> como base estructural.
+                escolares.
+                <br />
+                Proyecto desarrollado con <strong>HTML y SCSS</strong> como base
+                estructural.
               </p>
             </div>
           </div>
-          
 
           <div className="project-card">
             <div className="project-image">
@@ -53,8 +53,9 @@ const Project = () => {
               <p className="text-sections-2">
                 Juego que sirve para adivinar un número, a raíz del número que
                 escribes en el buscador. Además tiene un contador de números de
-                intento. 
-                <br/>Proyecto desarrollado con <strong>JavaScript</strong>.
+                intento.
+                <br />
+                Proyecto desarrollado con <strong>JavaScript</strong>.
               </p>
             </div>
           </div>
@@ -73,10 +74,12 @@ const Project = () => {
             </div>
             <div className="project-info">
               <p className="text-sections-2">
-                Buscador de series de anime. 
-                <br/>En este proyecto puedes buscar series por nombre, filtrar por género y ver los detalles de cada serie.
-                <br/>Proyecto desarrollado con{" "}
-                <strong>JavaScript</strong>.
+                Buscador de series de anime.
+                <br />
+                En este proyecto puedes buscar series por nombre, filtrar por
+                género y ver los detalles de cada serie.
+                <br />
+                Proyecto desarrollado con <strong>JavaScript</strong>.
               </p>
             </div>
           </div>
@@ -96,8 +99,9 @@ const Project = () => {
             <div className="project-info">
               <p className="text-sections-2">
                 Simulación de un "Twitter", en la que puedes seleccionar
-                contactos, guardar los datos y recuperar datos. 
-                <br/>Proyecto desarrollado con <strong>JavaScript</strong>.
+                contactos, guardar los datos y recuperar datos.
+                <br />
+                Proyecto desarrollado con <strong>JavaScript</strong>.
               </p>
             </div>
           </div>
@@ -116,10 +120,12 @@ const Project = () => {
             </div>
             <div className="project-info">
               <p className="text-sections-2">
-                Buscador de personajes de Rick And Morty. 
-                <br/>En este proyecto puedes buscar personajes por nombre, filtrar por género y por estado, y ver los detalles de cada personaje.
-                <br/>Proyecto desarrollado
-                con <strong>React</strong>.
+                Buscador de personajes de Rick And Morty.
+                <br />
+                En este proyecto puedes buscar personajes por nombre, filtrar
+                por género y por estado, y ver los detalles de cada personaje.
+                <br />
+                Proyecto desarrollado con <strong>React</strong>.
               </p>
             </div>
           </div>

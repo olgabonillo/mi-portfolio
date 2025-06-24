@@ -14,6 +14,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+
 main {
   padding-top: 48px; // altura del header
   display: flex;
@@ -21,7 +22,8 @@ main {
   align-items: center;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
   overflow-y: scroll;
@@ -37,7 +39,7 @@ section {
   justify-content: end;
   align-items: center;
   scroll-snap-align: start;
-  scroll-margin-top: 100px; // altura del header + margen de seguridad - voy a probar a ver cómo queda
+  scroll-margin-top: 100px;
 }
 
 section[id] {

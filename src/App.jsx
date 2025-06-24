@@ -11,17 +11,16 @@ function App() {
     function setSectionHeight() {
       const vh = window.innerHeight * 0.01;
 
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
     }
-  
+
     setSectionHeight();
-    window.addEventListener('resize', setSectionHeight);
-  
+    window.addEventListener("resize", setSectionHeight);
+
     return () => {
-      window.removeEventListener('resize', setSectionHeight);
+      window.removeEventListener("resize", setSectionHeight);
     };
   }, []);
-  
 
   return (
     <>

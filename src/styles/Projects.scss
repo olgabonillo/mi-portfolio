@@ -85,9 +85,9 @@ $espaciado-entre-proyectos: 40px;
     }
 }
 
-// Media Queries para responsividad
+// Media Queries para responsive
 
-// Mobile (por defecto, ya configurado con flex-direction: column)
+// Mobile 
 @media (max-width: 767px) {
     .project-card {
         flex-direction: column;
@@ -96,7 +96,7 @@ $espaciado-entre-proyectos: 40px;
     }
 }
 
-// Tablets y Escritorio (Aplicamos la alternancia aquí)
+// Tablets y Escritorio
 @media (min-width: 768px) {
     .projects-list {
         padding: 0 40px;
@@ -124,7 +124,7 @@ $espaciado-entre-proyectos: 40px;
         align-items: flex-start;
     }
 
-    // Ajuste de márgenes para el espacio entre imagen y texto cuando alternan
+    // Ajusto los márgenes para el espacio entre imagen y texto cuando alternan
     .project-card:nth-child(odd) {
         .project-image {
             margin-right: 2rem;
