@@ -16,7 +16,7 @@
   margin-bottom: 0;
   scroll-margin-top: 110px;
   padding-top: 10rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .about-container {
@@ -41,8 +41,8 @@
 .text-sections {
   font-family: "Delius", cursive;
   font-size: 15px;
-  line-height: 1.6;
-  max-width: 680px;
+  line-height: 1.5;
+  max-width: 670px;
   text-align: justify;
   padding: 0 1rem;
 }
@@ -66,16 +66,17 @@
 }
 
 .tech-logos {
-  margin-top: 4rem;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  margin-bottom: 5rem; // agrega espacio inferior
+  padding: 0 1rem;
 
   img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     object-fit: contain;
+    margin-top: 25px;
   }
 }
 
@@ -102,11 +103,17 @@
   }
 
   .tech-logos img {
-    max-width: 100%;
     height: auto;
     object-fit: contain;
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
+    max-width: 80px; // opcional: reduce tamaño en móvil
+    margin: 0.5rem;
+  }
+
+  .tech-logos img {
+    max-width: 80px; // opcional: reduce tamaño en móvil
+    margin: 0.5rem;
   }
 }

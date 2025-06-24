@@ -29,13 +29,12 @@ html, body {
 }
 
 section {
-  min-height: calc(var(--vh, 1vh) * 100 - 48px); // altura mínima, no obligatoria
   height: auto;
   scroll-snap-align: start;
   font-size: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   scroll-snap-align: start;
   scroll-margin-top: 100px; // altura del header + margen de seguridad - voy a probar a ver cómo queda

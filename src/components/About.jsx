@@ -14,7 +14,8 @@ const About = () => {
         </div>
         <div className="text-sections">
           <p>
-          Durante mucho tiempo sentí que me faltaba algo, una chispa, un motor que
+        ¡Hola! Mi nombre es Olga Bonillo y me encantaría contaros qué me trae hasta aquí...
+        <br/>Durante mucho tiempo sentí que me faltaba algo, una chispa, un motor que
         me impulsara de verdad. Fue entonces cuando, casi por casualidad,
         descubrí el mundo del desarrollo web… y todo cambió. La tecnología me
         atrapó desde el primer momento: su lógica, su creatividad, su capacidad
@@ -41,9 +42,9 @@ const About = () => {
         <br/>¡Gracias por leerme y por acompañarme en esta aventura!
           </p>
         </div>
-        <div className="tech-logos">
-        <img src={logos} alt="Logos de tecnologías" />
       </div>
+      <div className="tech-logos">
+        <img src={logos} alt="Logos de tecnologías" />
       </div>
     </section>
   );

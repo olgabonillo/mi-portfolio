@@ -42,6 +42,11 @@ const Footer = () => {
         <div className="logo-container">
           <img src="/logoblanco.png" className="logo-blanco" alt="Logo" />
         </div>
+        <div>
+          <p className="text-sections">
+            © 2025 Olga Bonillo. Todos los derechos reservados.
+          </p>
+        </div>
       </section>
     </footer>
   );
