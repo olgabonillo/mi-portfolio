@@ -1,4 +1,5 @@
 import "../styles/Header.scss";
+import logoNegro from "../assets/logonegro.png";
 
 const Header = () => {
   console.log("El componente Header se ha montado");
@@ -6,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <img src="/logo.png" className="logo" alt="Logo" />
+      <img src={logoNegro} alt="logo header" className="logo-negro"/>
         <button class="menu-toggle" aria-label="Abrir menú">
           &#9776;
         </button>

@@ -1,5 +1,6 @@
 import { FaInstagram, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "../styles/Footer.scss";
+import logoBlanco from "../assets/logoblanco.png";
 
 const Footer = () => {
   return (
@@ -40,7 +41,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="logo-container">
-          <img src="/logoblanco.png" className="logo-blanco" alt="Logo" />
+        <img src={logoBlanco} alt="logo footer" className="logo-blanco"/>
         </div>
         <div>
           <p className="text-sections">
