@@ -68,6 +68,10 @@ $espaciado-entre-proyectos: 40px;
     line-height: 1.6;
     margin-bottom: 15px;
     color: $color-texto;
+
+    body.about-active & {
+        display: none;
+    }
 }
 
 .project-link {
