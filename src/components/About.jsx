@@ -13,7 +13,7 @@ const About = () => {
           <img src={foto} alt="Foto de Olga Bonillo" />
         </div>
         <div className="text-sections">
-          <p>
+          <p className="presentation">
             ¡Hola! Mi nombre es Olga Bonillo y me encantaría contaros qué me
             trae hasta aquí...
             <br />

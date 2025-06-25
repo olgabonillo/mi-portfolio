@@ -76,31 +76,45 @@ nav {
   }
 
   .nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
     width: 100%;
+    background-color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav.show {
+    max-height: 300px;
   }
 
   .ul-list {
     flex-direction: column;
     width: 100%;
-    display: none; // oculto por defecto
-    background-color: black;
     padding: 1rem 0;
     margin: 0;
+  }
 
-    li {
-      text-align: left;
-      padding: 0.5rem 2rem;
+  .ul-list li {
+    text-align: left;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 
-      a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-      }
+    &:last-child {
+      border-bottom: none; 
+    }
+
+    a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
     }
   }
 
-  .ul-list.show {
-    display: flex; // se muestra cuando se activa el botón
+  .separated {
+    display: none; 
   }
 }
