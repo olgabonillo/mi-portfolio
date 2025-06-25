@@ -55,6 +55,20 @@ $espaciado-entre-proyectos: 40px;
     }
 }
 
+.project-image-link {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  
+    img {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
+
 .project-info {
     flex: 1;
     display: flex;
@@ -98,7 +112,27 @@ $espaciado-entre-proyectos: 40px;
         align-items: center;
         text-align: center;
     }
-}
+
+    .project-card {
+      flex-direction: column;
+    }
+  
+    .project-image {
+      order: 2; // imagen debajo del texto
+      margin-top: 1rem;
+      max-width: 250px;
+    }
+  
+    .project-info {
+      order: 1;
+    }
+  
+    .project-image-link img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
 
 // Tablets y Escritorio
 @media (min-width: 768px) {
@@ -143,3 +177,4 @@ $espaciado-entre-proyectos: 40px;
         }
     }
 }
+
