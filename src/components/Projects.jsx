@@ -11,7 +11,6 @@ const Project = () => {
     <header>
       <section id="2">
         <h1 className="title-sections-2">Proyectos</h1>
-        {/* Un único contenedor para todos los proyectos */}
         <div className="projects-list">
           <div className="project-card">
             <div className="project-image">
