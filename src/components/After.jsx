@@ -2,7 +2,7 @@ import "../styles/Aws.scss";
 
 const Aws = () => {
   return (
-    <section id="3">
+    <section id="devops">
       <h1 className="title-sections-2">Y... ¿ahora qué?</h1>
       <p className="text-sections-2">
         Ahora que ya conozco bien la programación, he decidido seguir creciendo

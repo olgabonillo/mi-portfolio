@@ -20,25 +20,31 @@ const Header = () => {
         <nav className={`nav ${isOpen ? 'show' : ''}`}> 
           <ul className="ul-list">
             <li>
-              <a href="#1" className="links" onClick={() => setIsOpen(false)}>
+              <a href="#sobre-mi" className="links" onClick={() => setIsOpen(false)}>
                 Sobre mí
               </a>
             </li>
             <li className="separated">|</li>
             <li>
-              <a href="#2" className="links" onClick={() => setIsOpen(false)}>
+              <a href="#proyectos" className="links" onClick={() => setIsOpen(false)}>
                 Proyectos
               </a>
             </li>
             <li className="separated">|</li>
             <li>
-              <a href="#3" className="links" onClick={() => setIsOpen(false)}>
+              <a href="#aws" className="links" onClick={() => setIsOpen(false)}>
                 Curso AWS re/Start
               </a>
             </li>
             <li className="separated">|</li>
             <li>
-              <a href="#4" className="links" onClick={() => setIsOpen(false)}>
+              <a href="#devops" className="links" onClick={() => setIsOpen(false)}>
+                Y... ¿ahora qué?
+              </a>
+            </li>
+            <li className="separated">|</li>
+            <li>
+              <a href="#contacto" className="links" onClick={() => setIsOpen(false)}>
                 Contacto
               </a>
             </li>

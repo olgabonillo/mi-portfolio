@@ -5,7 +5,7 @@ import logoBlanco from "../assets/logoblanco.png";
 const Footer = () => {
   return (
     <footer>
-      <section id="4" className="footer-section">
+      <section id="contacto" className="footer-section">
         <div className="footer-separator"></div>
         <h1 className="title-sections">
           ¿Tienes un proyecto o idea? ¡Contáctame!

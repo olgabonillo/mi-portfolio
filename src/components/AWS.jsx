@@ -2,7 +2,7 @@ import "../styles/Aws.scss";
 
 const Aws = () => {
   return (
-      <section id="3">
+      <section id="aws">
         <h1 className="title-sections-2">Sobre AWS re/Start</h1>
         <p className="text-sections-2">
           Recientemente, completé con éxito un bootcamp intensivo de{" "}

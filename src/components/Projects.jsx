@@ -9,7 +9,7 @@ import project6Img from "../assets/project6.jpeg";
 const Project = () => {
   return (
     <header>
-      <section id="2">
+      <section id="proyectos">
         <h1 className="title-sections-2">Proyectos</h1>
         <div className="projects-list">
           <div className="project-card">

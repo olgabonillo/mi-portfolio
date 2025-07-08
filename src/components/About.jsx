@@ -6,7 +6,7 @@ const About = () => {
   console.log("El componente About se ha creado");
 
   return (
-    <section id="1" className="about-section">
+    <section id="sobre-mi" className="about-section">
       <h1 className="title-sections">Sobre mí</h1>
       <div className="about-container">
         <div className="about-image">
