@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import About from "./components/About";
 import AWS from "./components/AWS";
+import After from "./components/After";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Projects />
       <AWS />
+      <After/>
       <Footer />
     </>
   );

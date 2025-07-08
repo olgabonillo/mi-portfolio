@@ -147,7 +147,7 @@ $espaciado-entre-proyectos: 40px;
         gap: 2rem;
         padding-bottom: $espaciado-entre-proyectos / 2;
 
-        // PARA PROYECTOS PARES: imagen a la derecha, texto a la izquierda
+        
         &:nth-child(even) {
             flex-direction: row-reverse;
         }

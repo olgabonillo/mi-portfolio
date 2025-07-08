@@ -1,8 +1,7 @@
 import "../styles/Aws.scss";
 
-const Header = () => {
+const Aws = () => {
   return (
-    <header>
       <section id="3">
         <h1 className="title-sections-2">Sobre AWS re/Start</h1>
         <p className="text-sections-2">
@@ -66,8 +65,7 @@ const Header = () => {
           aprendido y lo que estoy construyendo.
         </p>
       </section>
-    </header>
   );
 };
 
-export default Header;
+export default Aws;
